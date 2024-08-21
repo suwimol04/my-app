@@ -4,9 +4,17 @@ import mongoose, { Schema } from "mongoose";
 const topicSchema = new Schema(
   {
     name: { type: String, required: true },
-    category: { type: String, required: true },
-    image: { type: String, required: true },
-    price: { type: Number, required: true },
+    project: { type: String, required: true },
+    implementation: { type: String, required: true },
+    email: { type: String, required: true },
+    mobile: { type: String, required: true },
+    budget: { type: Number, required: true },
+    year: { type: Number, required: true },
+    evaluation: { type: Number, required: true },
+    weak: { type: Number, required: true },
+    strength: { type: Number, required: true },
+    development: { type: Number, required: true },
+    suggestion: { type: Number, required: true },
   },
   {
     timestamps: true,

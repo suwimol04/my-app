@@ -6,10 +6,17 @@ import { useRouter } from "next/navigation";
 
 export default function AddProduct() {
   const [name, setName] = useState("");
-  const [image, setImage] = useState("");
-  const [price, setPrice] = useState("");
-  const [category, setCategory] = useState("");
-
+  const [project, setnewproject] = useState("");
+  const [implementation, setnewimplementation] = useState("");
+  const [email, setnewemail] = useState("");
+  const [mobile, setnewmobile] = useState("");
+  const [budget, setnewbudget] = useState("");
+  const [year, setnewyear] = useState("");
+  const [evaluation, setnewevaluation] = useState("");
+  const [weak, setnewweak] = useState("");
+  const [strength, setnewstrength] = useState("");
+  const [development, setnewdevelopment] = useState("");
+  const [suggestion, setnewsuggestion] = useState("");
   const router = useRouter();
 
   const handleSubmit = async (e) => {

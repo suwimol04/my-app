@@ -9,8 +9,17 @@ export async function PUT(request, { params }) {
   const { id } = params;
   const {
     newName: name,
-    newImage: image,
-    newPrice: price,
+    newProject: project,
+    newImplementation: implementation,
+    newEmail: email,
+    newMobile: mobile,
+    newBudget: budget,
+    newYear: year,
+    newEvaluation: evaluation,
+    newWeak:  weak,
+    newStrength: strength,
+    newDevelopment: development,
+    newSuggestion: suggestion,
     newCategory: category,
   } = await request.json();
   await connectMongoDB();
